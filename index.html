@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SVG link test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SVG link test</h1>
+    <p><a href="https://github.com/russmaxdesign/component">Github Page</a></p>
+    <svg
+      width="240px"
+      height="200px"
+      viewBox="0 0 240 200"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      aria-labelledby="title1 desc1"
+    >
+      <title id="title1">Boxes</title>
+      <desc id="desc1">A series of boxes</desc>
+      <rect id="Rectangle-2" fill="#F8E71C" x="0" y="0" width="240" height="200"></rect>
+      <rect id="box01" fill="#000000" x="20" y="20" width="160" height="40"></rect>
+      <rect id="box02" fill="#000000" x="40" y="80" width="160" height="40"></rect>
+      <rect id="box03" fill="#000000" x="60" y="140" width="160" height="40"></rect>
+      <a xlink:href="#">
+        <text id="Front-panel" fill="#FFFFFF">
+          <tspan x="37" y="45">Front panel</tspan>
+        </text>
+      </a>
+      <a xlink:href="#">
+        <text id="Side-panel" fill="#FFFFFF">
+          <tspan x="57" y="105">Side panel</tspan>
+        </text>
+      </a>
+      <a xlink:href="#">
+        <text id="Rear-panel" fill="#FFFFFF">
+          <tspan x="77" y="165">Rear panel</tspan>
+        </text>
+      </a>
+    </svg>
+
+    <figure>
+      <figcaption class="markup-heading">Markup</figcaption>
+<pre><code class="language-markup">&lt;svg
+  width="240px"
+  height="200px"
+  viewBox="0 0 240 200"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  aria-labelledby="title1 desc1"
+&gt;
+  &lt;title id="title1"&gt;Boxes&lt;/title&gt;
+  &lt;desc id="desc1"&gt;A series of boxes&lt;/desc&gt;
+  &lt;rect id="Rectangle-2" fill="#F8E71C" x="0" y="0" width="240" height="200"&gt;&lt;/rect&gt;
+  &lt;rect id="box01" fill="#000000" x="20" y="20" width="160" height="40"&gt;&lt;/rect&gt;
+  &lt;rect id="box02" fill="#000000" x="40" y="80" width="160" height="40"&gt;&lt;/rect&gt;
+  &lt;rect id="box03" fill="#000000" x="60" y="140" width="160" height="40"&gt;&lt;/rect&gt;
+  &lt;a xlink:href="#"&gt;
+    &lt;text id="Front-panel" fill="#FFFFFF"&gt;
+      &lt;tspan x="37" y="45"&gt;Front panel&lt;/tspan&gt;
+    &lt;/text&gt;
+  &lt;/a&gt;
+  &lt;a xlink:href="#"&gt;
+    &lt;text id="Side-panel" fill="#FFFFFF"&gt;
+      &lt;tspan x="57" y="105"&gt;Side panel&lt;/tspan&gt;
+    &lt;/text&gt;
+  &lt;/a&gt;
+  &lt;a xlink:href="#"&gt;
+    &lt;text id="Rear-panel" fill="#FFFFFF"&gt;
+      &lt;tspan x="77" y="165"&gt;Rear panel&lt;/tspan&gt;
+    &lt;/text&gt;
+  &lt;/a&gt;
+&lt;/svg&gt;
+</code></pre>
+    </figure>
+
+    <h2>Results</h2>
+    <p>A pass is defined as announcing all three links</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Device</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Windows/NVDA/Chrome</td>
+          <td><span class="pass">Pass</span></td>
+        </tr>
+        <tr>
+          <td>Windows/NVDA/FireFox</td>
+          <td><span class="pass">Pass</span></td>
+        </tr>
+        <tr>
+          <td>Windows/NVDA/Edge</td>
+          <td><span class="fail">Pass</span></td>
+        </tr>
+        <tr>
+          <td>OSX/VoiceOver/Chrome</td>
+          <td><span class="pass">Pass</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><a href="https://github.com/russmaxdesign/component">Github Page</a></p>
+  </div>
+
+<script src="assets/js/prism.js"></script>
+</body>
+</html>
